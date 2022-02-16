@@ -17,11 +17,10 @@ public class App extends Application {
 
     protected static String loginRemember = "";
     protected static Boolean remembered = false;
-    protected final static String URL = "jdbc:mysql://172.16.225.104:3306/user02";
+    protected final static String URL = "jdbc:mysql://172.16.225.104:3306/user02?useSSL=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     protected final static String USERNAME = "user02";
     protected final static String PASSWORD = "77053";
     protected final static String GET_ALL_USERS = "SELECT * FROM User";
-    protected final static String INSERT_NEW_USER = "INSERT INTO User VALUES (0, ?, ?, ?, ?, ?)";
 
     @Override
     public void start(Stage stage) throws IOException {
